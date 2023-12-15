@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# displays the time for 12 hours and 59 minutes
+
+LS_LIST=(*)
+for l in "${LS_LIST[@]}"
+do
+    if [ -f "$l" ]; then
+        echo "${l#*-}"
+    fi
+done
